@@ -431,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7497375792202202100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -497,6 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7497375792371581082}
+  - component: {fileID: 2567508099371673994}
   m_Layer: 5
   m_Name: Container Slot Reward
   m_TagString: Untagged
@@ -528,3 +529,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 280, y: 277}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2567508099371673994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497375792371581083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2240b5d2f4e88146a79e78e50908699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectBackGround: {fileID: 7497375792202202091}
+  _iconCurrency: {fileID: 7497375791156078996}
+  _textDay: {fileID: 7497375791873398631}
+  _countReward: {fileID: 7497375791155092700}

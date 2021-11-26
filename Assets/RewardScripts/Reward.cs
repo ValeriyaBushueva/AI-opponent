@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class Reward 
 {
-    public RewarType RewarType;
+    public RewardType rewardType;
     public Sprite IconCurrency;
     public int CountCurrency;
 }

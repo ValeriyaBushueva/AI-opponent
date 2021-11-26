@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿ using TMPro;
 using UnityEngine;
 
 public class CurrencyView : MonoBehaviour
@@ -19,7 +16,7 @@ public class CurrencyView : MonoBehaviour
         set => PlayerPrefs.SetInt(WoodKey, value);
     }
     
-    private int Diamond
+    private int Diamonds
     {
         get => PlayerPrefs.GetInt(DiamondKey, 0);
         set => PlayerPrefs.SetInt(DiamondKey, value);
@@ -41,15 +38,17 @@ public class CurrencyView : MonoBehaviour
     public void AddWood(int value)
     {
         Wood += value;
+        RefreshText();
     }
     public void AddDiamonds(int value)
     {
-        Diamond += value;
+        Diamonds += value;
+        RefreshText();
     }
 
     private void RefreshText()
     {
         _currentCountWood.text = Wood.ToString();
-        _currentCountDiamond.text = Diamond.ToString();
+        _currentCountDiamond.text = Diamonds.ToString();
     }
 }

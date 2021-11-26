@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum RewarType 
+public enum RewardType 
 {
    Wood,
    Diamond
